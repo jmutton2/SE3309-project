@@ -1,0 +1,1 @@
+select * from trainFacts where trainFactsrequired >3000;

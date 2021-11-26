@@ -1,0 +1,1 @@
+select * from stationlog where approxFuelRequired < 700000;
