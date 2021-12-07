@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>SCHEDULE</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/schedule.css">
+</head>
+  <body>
+    <div class="container">
+      <div class="row header justify-content-evenly">
+        <!-- header -->
+          <div class="col-1">
+            <form action="/dashboard" method="GET">
+              <button type="submit" class="btn btn-dark">Back</button>
+            </form>
+          </div>
+          <div class="col-10 h_title"> 
+            S C H E D U L E S
+          </div>
+          <div class="col-1">
+            <form action="/" method="GET">
+              <button type="submit" class="btn btn-dark">Logout</button>
+            </form>
+          </div>
+
+        <!-- search-bar -->
+        <div class="h_searchBar">
+          <form action="/schedule">
+            <input type="text" name="trainNo" value="" style="width: 600px; height:37.77px">
+            <button type="submit" value="submit" class="btn btn-dark">Search By Train</button>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- Table Titles Row -->
+      <div class="row titleContent">
+        <div class="col gy-2">
+          <div class="p-3 border bg-dark entityTitle">
+            SCHEDULES OF TRAINS READY FOR UTIL
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row mainContent">
+        <div class="col-12" style="padding-bottom:50px;">
+            <div class="p-3 border bg-dark entity">
+                <div class="col table_content">
+                    <table class="table" style="color:white">
+                      <thead>
+                        <tr>
+                          <th scope="col">Train</th>
+                          <th scope="col">Station Name</th>
+                          <th scope="col">Arrival Time</th>
+                          <th scope="col">Departure Time</th>
+                          <th scope="col">Status</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- loop through all schedules and ready for util and display data in a table -->
+                            <% for(var i=0; i<logs.length; i++) {%>
+                            <tr>
+                                <th scope="row"><%=logs[i]['TrainNo']%></th>
+                                <td><%= logs[i]['StationName'] %></td>
+                                <td><%= logs[i]['arrivalTime'] %></td>
+                                <td><%= logs[i]['departureTime'] %></td>
+                                <td><%= logs[i]['routeStatus'] %></td>
+                            </tr>
+                            <% } %>
+                      </tbody>
+                    </table>
+                  </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

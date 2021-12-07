@@ -1,0 +1,60 @@
+/* default start */
+body{
+    background-color: #6a2424;
+    color:white;
+}
+
+.header{
+    padding:10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-weight: bold;
+    background-color: #3a1717;
+}
+
+.h_title{
+    color:white;
+    font-size:20px;
+    text-align: center;
+}
+
+.h_searchBar{
+    padding:10px;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    background-color: #3a1717;
+}
+
+.btn{
+    border-color: white;
+}
+
+/* default end */
+
+.entity{
+    border-radius: 4px;
+    color:white;
+    height:730px;
+    overflow-y: scroll;
+}
+
+.entityTitle{
+    border-radius: 4px;
+    color:white;
+}
+
+.mainContent{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height:200px;
+}
+
+.titleContent{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
