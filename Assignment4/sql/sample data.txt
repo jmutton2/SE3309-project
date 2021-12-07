@@ -4,7 +4,7 @@ NOTE: *this is only a set of sample data, the management system is not limited t
 #LOGIN(on main login page)
 
 supervisor login:
-email:nulla.eget@protonmail.com
+email: nulla.eget@protonmail.com
 password: admin
 
 employee login:
