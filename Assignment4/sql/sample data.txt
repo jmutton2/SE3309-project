@@ -1,0 +1,42 @@
+This file contains a set data that can be used to test and view queries in effect in our assignment.
+NOTE: *this is only a set of sample data, the management system is not limited to this data*
+
+#LOGIN(on main login page)
+
+supervisor login:
+email:nulla.eget@protonmail.com
+password: admin
+
+employee login:
+email: fringilla.euismod@google.ca
+password: admin
+
+> in maintenance table, you will only see maintenances' performed by (logged in employee) or supervised by (logged in supervisor).
+
+
+#ADD NEW EMPLOYEE(in employee tab)
+
+> employee details can be added with any values in this format.
+
+Email: test@gmail.com
+First Name: bob
+Last Name: john
+Phone #: 123-456-7890
+Salary: 123
+Position: employee
+Department: operations
+Start Date: 1995-05-20
+Vacation Days: 21
+
+> newly added employee can be viewed in employee table.
+> employee will also be assigned a train (using trigger) which can be viewed in table beside 'add employee' form.
+> by default newly added employees will be added to train #99999 (which is a training train).
+
+
+#FILTER SCHEDULES(in schedule tab)
+
+> any number from 1 - 100 can be used in the filter bar at the top of the page.
+> after pressing search, the table will filter the schedules for entered train number that are ready for util.
+> if a train number that does not exist or an invalid entry is entered, the table will default to showing all schedules that are also ready for util.
+
+#other functionalities to not require user input
